@@ -1,0 +1,19 @@
+/* html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+/* ----- NAVBAR ----- */
+.brand-logo {
+    font-family: 'Josefin Slab', serif;
+}
+
+/* ----- LANDING PAGE  ----- */
+.landing-card {
+    margin-top: 3em;
+}
+
+.landing-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -3em;
+}
