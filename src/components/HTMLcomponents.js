@@ -1,46 +1,98 @@
 import React from 'react';
+import Header from './Header';
+import './css/HTMLcomponents.css';
 
 class HTMLComponents extends React.Component {
     render() {
         return(
             <div>
+                <Header header_title="HTML Components"/>
+                <div className="fixed-action-btn">
+                    <a className="btn-floating btn-large blue">
+                        <i className="large material-icons">arrow_forward</i>
+                    </a>
+                </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col s12">
-                            <h1 className="blue-text darken-5">HTML Components</h1>
+                        <div className="col s12 m6 offset-m3">
+                            <div className="card large">
+                                <div className="card-content">
+                                    <span className="card-title blue-text">Select Items</span>
+                                    <p className="form-explanation">Maximum of 5 components.</p>
+                                    <form>
+                                        <p>
+                                            <input type="checkbox" name="item" id="typo" />
+                                            <label htmlFor="typo">Typography</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="colors" />
+                                            <label htmlFor="colors">Colors</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="button" />
+                                            <label htmlFor="button">Button</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="navbar" />
+                                            <label htmlFor="navbar">Navbar</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="breadcrumbs" />
+                                            <label htmlFor="breadcrumbs">Breadcrumbs</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="form" />
+                                            <label htmlFor="form">Form</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="card" />
+                                            <label htmlFor="card">Card</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="item" id="tables" />
+                                            <label htmlFor="tables">Table</label>
+                                        </p>
+                                        <p className="blue-text center">2 / 5 components selected</p>
+                                        <div className="card-action">
+                                            <div>
+                                                <button className="btn btn-large red waves-effect waves-light">Cancel</button>
+                                            </div>
+                                            <div>
+                                                <input type="submit" value="Submit" className="btn btn-large blue waves-effect waves-light submit-button" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
-      <div className="col s12 m6">
-        <div className="card">
-          <div className="card-content">
-            <span className="card-title">Tabbed Card</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, rem obcaecati. Recusandae laborum, odit commodi
-              fuga dolores dolorem, minima hic similique illo, ipsam eos. Perspiciatis omnis voluptas sunt delectus ab?</p>
-          </div>
-          <div className="card-tabs">
-            <ul className="tabs tabs-width-fixed">
-              <li className="tab">
-                <a href="#tab1">Tab 1</a>
-              </li>
-              <li className="tab">
-                <a href="#tab2">Tab 2</a>
-              </li>
-              <li className="tab">
-                <a href="#tab3">Tab 3</a>
-              </li>
-            </ul>
-          </div>
-          <div className="card-content">
-            <div id="tab1">This is the content for tab 1</div>
-            <div id="tab2">This is the content for tab 2</div>
-            <div id="tab3">This is the content for tab 3</div>
-          </div>
-        </div>
-      </div>
-                </div>
+                        <div className="col s12 m6">
+                            <div className="card medium">
+                                <div className="card-content">
+                                    <span className="card-title">Button</span>
+                                    <iframe src="iframe-button.html" title="iframe-button">
+                                    </iframe>
+                                </div>
+                                <div className="card-tabs">
+                                    <ul className="tabs tabs-width-fixed">
+                                        <li className="tab">
+                                            <a href="#tab1">w3schools</a>
+                                        </li>
+                                        <li className="tab">
+                                            <a href="#tab2">MDN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="card-content">
+                                    <div id="tab1">This is the content for tab 1</div>
+                                    <div id="tab2">This is the content for tab 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

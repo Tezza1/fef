@@ -1,0 +1,23 @@
+/* FORM */
+.form-explanation {
+    padding-bottom: 10px;
+}
+
+label {
+    margin-bottom: 3px;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.submit-button {
+    width: 100%;
+}
+
+/* COMPONENTS */
+iframe {
+    border: none;
+    padding: 10px;
+}
